@@ -1,0 +1,177 @@
+
+@import "_variables.scss";
+@import "_mediaquery";
+@import "_mixin";
+@import "_mapas";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $estilo-fuente;
+}
+
+
+#menu {
+
+    @media (min-width: $lg) {
+        background-color: #151515;
+
+
+        .nav-link {
+            @include crearBordes;
+            padding: 5px 18px;
+        }
+    }
+
+}
+
+.navbar-brand {
+
+    span {
+        color: $color-nombre;
+    }
+
+}
+
+
+
+.headerHome {
+    background-image: url(/img/Fondo.svg);
+    width: auto;
+    height: 100vh;
+    max-height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas: "contenido1 contenido2";
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: $md) {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "contenido1";
+        
+    }
+    
+
+    .dvHeader{
+        display: flex;
+        justify-content: center;
+        height: 600px;
+        align-items: center;
+        color: white;
+        grid-column-start: contenido1;
+        grid-column-end: contenido1;
+        }
+
+        .dvFlex {
+            
+            height: 350px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+
+            @media (min-width: $md) {
+                font-size: $tamaño-fuente;
+                font-family: $estilo-fuente;
+            }
+
+            .titulo {
+                font-size: 25px ;
+                text-align: center;
+            }
+
+            .titulo {
+                @media (min-width: $md) {
+                    font-size: 40px;
+                }
+            }
+
+            span {
+                color: $color-nombre;
+            }
+
+            .botonCv {
+                max-width: 180px;
+                @include crearBordes;
+                cursor: pointer;
+                padding: 10px;
+                color: white;
+            }
+    
+            .botonCv:hover {
+                background-color: map-get($map: $caja1, $key: color );
+                color: black;
+                box-shadow: 0px 0px 5px black;
+                padding: 8px;
+            }
+
+            .redes {
+                padding: 5px;
+                transition: all 200ms;
+            }
+            
+            .redes:hover {
+                transform: map-get($map: $caja1, $key: transform );
+            }
+        }
+
+        .dvImg {
+            grid-area: (2/3);
+            background-image: url(./img/slide33.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            
+            @media (max-width: $md) {
+                background-size: cover;
+            }
+
+
+            .opacidad {
+                background-size: contain;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                button {
+                    display: none;
+                }
+            }
+
+            .opacidad:hover{
+                background-color: $fondo-transparente;
+                background-size: cover;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+
+                button{
+                    display: block;
+                    background-color: $color-nombre;
+                    @include crearBordes;
+                    padding: 8px;
+                    color: white;
+                }
+
+                button:hover {
+                    background-color: map-get($map: $caja1, $key: color );
+                    color: black;
+                    box-shadow: 0px 0px 5px black;
+                    padding: 8px;
+                }
+            }
+
+            
+        }
+    }
+

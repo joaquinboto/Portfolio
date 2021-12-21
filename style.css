@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+@media (min-width: 992px) {
+  #menu {
+    background-color: #151515;
+  }
+  #menu .nav-link {
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 5px white;
+            box-shadow: 0px 0px 5px white;
+    padding: 5px 18px;
+  }
+}
+
+.navbar-brand span {
+  color: #5C62EC;
+}
+
+.headerHome {
+  background-image: url(/img/Fondo.svg);
+  width: auto;
+  height: 100vh;
+  max-height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "contenido1 contenido2";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .headerHome {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "contenido1";
+  }
+}
+
+.headerHome .dvHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -ms-grid-column: contenido1;
+      grid-column-start: contenido1;
+  grid-column-end: contenido1;
+}
+
+.headerHome .dvFlex {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .headerHome .dvFlex {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+  }
+}
+
+.headerHome .dvFlex .titulo {
+  font-size: 25px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .headerHome .dvFlex .titulo {
+    font-size: 40px;
+  }
+}
+
+.headerHome .dvFlex span {
+  color: #5C62EC;
+}
+
+.headerHome .dvFlex .botonCv {
+  max-width: 180px;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+}
+
+.headerHome .dvFlex .botonCv:hover {
+  background-color: #5C62EC;
+  color: black;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+  padding: 8px;
+}
+
+.headerHome .dvFlex .redes {
+  padding: 5px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.headerHome .dvFlex .redes:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.headerHome .dvImg {
+  grid-area: 0.66667;
+  background-image: url(./img/slide33.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .headerHome .dvImg {
+    background-size: cover;
+  }
+}
+
+.headerHome .dvImg .opacidad {
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerHome .dvImg .opacidad button {
+  display: none;
+}
+
+.headerHome .dvImg .opacidad:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.headerHome .dvImg .opacidad:hover button {
+  display: block;
+  background-color: #5C62EC;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+  padding: 8px;
+  color: white;
+}
+
+.headerHome .dvImg .opacidad:hover button:hover {
+  background-color: #5C62EC;
+  color: black;
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+  padding: 8px;
+}
+/*# sourceMappingURL=style.css.map */
