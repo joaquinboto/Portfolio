@@ -218,4 +218,27 @@
   ///////////*SKILLS*///////////////@extend
 
 
-  
+  .carousel-inner {
+    max-height:40rem ;
+}
+
+#intro {
+    background-image: url(./img/Fondo.svg);
+}
+
+#section_ {
+    background-color: white;
+}
+
+
+footer {
+    background-image: url(/img/Fondo.svg);
+    min-height: 100px;;
+
+    p {
+        color:#f3f3f3;
+        text-align:center;
+    }
+}
+
+
