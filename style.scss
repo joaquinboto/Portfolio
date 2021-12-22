@@ -215,6 +215,8 @@
         }
     }
 
+    
+
   ///////////*SKILLS*///////////////@extend
 
 
@@ -226,11 +228,6 @@
     background-image: url(./img/Fondo.svg);
 }
 
-#section_ {
-    background-color: white;
-}
-
-
 footer {
     background-image: url(./img/Fondo.svg);
     min-height: 100px;;
@@ -238,6 +235,10 @@ footer {
     p {
         color:#f3f3f3;
         text-align:center;
+    }
+
+    .iconos , img {
+        padding: 0 10px;
     }
 }
 

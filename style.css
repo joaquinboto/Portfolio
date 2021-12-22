@@ -242,10 +242,6 @@
   background-image: url(./img/Fondo.svg);
 }
 
-#section_ {
-  background-color: white;
-}
-
 footer {
   background-image: url(./img/Fondo.svg);
   min-height: 100px;
@@ -254,5 +250,9 @@ footer {
 footer p {
   color: #f3f3f3;
   text-align: center;
+}
+
+footer .iconos, footer img {
+  padding: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */
