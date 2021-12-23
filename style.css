@@ -253,7 +253,7 @@ footer .iconos, footer img {
 }
 
 .contenedorContacto {
-  background-image: url(/img/Fondo.svg);
+  background-image: url(img/Fondo.svg);
   background-size: cover;
   background-repeat: no-repeat;
   width: auto;
