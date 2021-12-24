@@ -279,6 +279,12 @@ footer .iconos, footer img {
   width: 500px;
 }
 
+@media (max-width: 576px) {
+  .contenedorContacto .encabezadoContacto {
+    width: 300px;
+  }
+}
+
 .contenedorContacto .Formulario {
   background-color: #26292D;
   width: 500px;
@@ -299,13 +305,7 @@ footer .iconos, footer img {
           align-items: center;
 }
 
-@media (max-width: 576px) {
-  .contenedorContacto .Formulario {
-    width: 300px;
-  }
-}
-
-.contenedorContacto .Formulario input, .contenedorContacto .Formulario textarea {
+.contenedorContacto .Formulario .casilla {
   border-radius: 7px;
   background-color: #1C1E22;
   padding: 10px;
@@ -315,9 +315,38 @@ footer .iconos, footer img {
 
 .contenedorContacto .Formulario textarea {
   max-height: 150px;
+  background-color: #1C1E22;
+  width: 350px;
 }
 
 .contenedorContacto .Formulario label {
   padding: 5px;
+}
+
+.contenedorContacto .Formulario .btnForm {
+  width: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  background-color: #5C62EC;
+}
+
+@media (max-width: 576px) {
+  .contenedorContacto .Formulario .casilla {
+    border-radius: 7px;
+    padding: 10px;
+    width: 280px;
+    color: white;
+  }
+  .contenedorContacto .Formulario textarea {
+    width: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contenedorContacto .Formulario {
+    width: 350px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

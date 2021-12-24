@@ -261,7 +261,13 @@ footer {
     .encabezadoContacto {
         height: 200px;
         width: 500px;
+
+        @media (max-width: $sm) {
+            width: 300px;
+        }
     }
+
+
 
 
     .Formulario {
@@ -274,11 +280,8 @@ footer {
         flex-direction: column;
         align-items: center;
 
-        @media (max-width: $sm) {
-            width: 300px;
-        }
 
-        input {
+        .casilla {
             border-radius: 7px;
             background-color: #1C1E22;
             padding: 10px;
@@ -287,9 +290,9 @@ footer {
         }
     
         textarea {
-            @extend input;
             max-height: 150px;
-            
+            background-color: #1C1E22;
+            width: 350px;
             
         }
 
@@ -297,9 +300,43 @@ footer {
             padding: 5px;
         }
 
+
+        .btnForm {
+            width: 200px;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 10px;
+            color: white;
+            background-color: $color-nombre;
+        }
+
+        @media (max-width: $sm) {
+        
+            .casilla {
+                border-radius: 7px;
+                padding: 10px;
+                width: 280px;
+                color: white;
+            }
+
+            textarea {
+                width: 280px;
+            }
+        }
+
+        
     }
 
-
+    @media (max-width: $sm) {
+            
+        .Formulario {
+            width: 350px;
+        }
     
+    }
 }
+
+
+
+
 
