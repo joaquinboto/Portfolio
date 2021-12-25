@@ -350,10 +350,10 @@ footer {
 ///////////////////*SKILLS*///////////
 
 .headerSkills {
-    position: relative;
-    background-image: url(/img/Fondo.svg);
+    background-image: url(img/Fondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     height: 100vh;
 
     @media (max-width: $md) {
@@ -369,7 +369,6 @@ footer {
             grid-template-columns: 1fr;
             grid-template-rows: 300px 300px;
 
-           
         }
         
         .contenedorH1   {
@@ -413,7 +412,6 @@ footer {
                 padding-bottom: 20px;
             }
 
-           
 
             h6 {
                 font-size: 14px;

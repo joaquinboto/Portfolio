@@ -357,10 +357,10 @@ footer .iconos, footer img {
 }
 
 .headerSkills {
-  position: relative;
-  background-image: url(/img/Fondo.svg);
+  background-image: url(img/Fondo.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
   height: 100vh;
 }
 
