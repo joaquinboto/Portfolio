@@ -467,8 +467,26 @@ footer {
     max-height: 1100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+
+
+    .dvProyectsH1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .ProyectsH1 {
+            color: white;
+            width: 70%;
+            font-size: 45px;
+            padding: 30px;
+            text-align: center;
+        }
+
+    }
     
-    .cuadrado {
+    .dvProyectsAnimacion {
         width: auto;
         height: 550px;
         position: relative;
@@ -517,33 +535,34 @@ footer {
     
     }
 
-    .cuadrado>* {
+    .dvProyectsAnimacion>* {
         transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
     }
 
-    .cuadrado>div {
+    .dvProyectsAnimacion>div {
         transform: rotateY(-20deg) rotateX(20deg);
+        filter: blur(1px);
         cursor: pointer;
     }
 
-    .cuadrado:hover>div {
+    .dvProyectsAnimacion:hover>div {
         transform: rotateY(0deg) rotateX(0deg);
-        filter: saturate(20%)
+        filter: saturate(50%)
         
     }
 
-    .cuadrado:hover .box2 {
+    .dvProyectsAnimacion:hover .box2 {
         transition-delay: 0.1s;
         transform: translate(-260px, 30px);
     }
 
-    .cuadrado:hover .box1 {
+    .dvProyectsAnimacion:hover .box1 {
         transition-delay: 0.1s ;
         transform: translate(0px, -80px);
     }
 
-    .cuadrado:hover div:hover {
-        filter: brightness(110%) saturate(150%);
+    .dvProyectsAnimacion:hover div:hover {
+        filter: brightness(120%) saturate(130%);
     }
 
 
