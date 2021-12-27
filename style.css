@@ -719,9 +719,19 @@ footer .iconos, footer img {
 }
 
 .mainFlex .dvCard1 .card1 {
-  width: 200px;
-  height: 350px;
-  background: url(./img/card1.png);
+  width: 300px;
+  height: 400px;
+  background-image: url(/img/pixlr-bg-healer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.mainFlex .dvCard1 .card1:hover {
+  background-image: url(/img/pixlr-bg-healer2.png);
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 .mainFlex .dvCard2 {
@@ -752,9 +762,19 @@ footer .iconos, footer img {
 }
 
 .mainFlex .dvCard2 .card2 {
-  width: 200px;
-  height: 350px;
-  background: url(./img/car2.png);
+  width: 300px;
+  height: 400px;
+  background-image: url(/img/pixlr-bg-knight.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.mainFlex .dvCard2 .card2:hover {
+  background-image: url(/img/knight2.png);
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 .mainFlex .dvCard3 {
@@ -782,8 +802,18 @@ footer .iconos, footer img {
 }
 
 .mainFlex .dvCard3 .card3 {
-  width: 200px;
-  height: 350px;
-  background: url(./img/card3.png);
+  width: 300px;
+  height: 400px;
+  background-image: url(/img/pixlr-bg-mage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+
+.mainFlex .dvCard3 .card3:hover {
+  background-image: url(/img/pixlr-bg-mage2.png);
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 /*# sourceMappingURL=style.css.map */
