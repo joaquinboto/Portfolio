@@ -506,4 +506,104 @@ footer .iconos, footer img {
   color: white;
   opacity: 0;
 }
+
+.headerProyects {
+  background-image: url(/img/Fondo.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  max-height: 1100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.headerProyects .cuadrado {
+  width: auto;
+  height: 550px;
+  position: relative;
+}
+
+.headerProyects .cuadrado .box1 {
+  position: absolute;
+  width: 701px;
+  height: 428px;
+  left: 37px;
+  top: 110px;
+  background: url(/img/online-document-animate.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.headerProyects .cuadrado .box2 {
+  position: absolute;
+  width: 399px;
+  height: 274px;
+  left: 225px;
+  top: 250px;
+  background: url(/img/Blog.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.headerProyects .cuadrado .box3 {
+  position: absolute;
+  width: 412px;
+  height: 274px;
+  left: 375px;
+  top: 280px;
+  background: url(/img/working-from-anywhere-animate.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.headerProyects .cuadrado > * {
+  -webkit-transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+
+.headerProyects .cuadrado > div {
+  -webkit-transform: rotateY(-20deg) rotateX(20deg);
+          transform: rotateY(-20deg) rotateX(20deg);
+  cursor: pointer;
+}
+
+.headerProyects .cuadrado:hover > div {
+  -webkit-transform: rotateY(0deg) rotateX(0deg);
+          transform: rotateY(0deg) rotateX(0deg);
+  -webkit-filter: saturate(20%);
+          filter: saturate(20%);
+}
+
+.headerProyects .cuadrado:hover .box2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transform: translate(-260px, 30px);
+          transform: translate(-260px, 30px);
+}
+
+.headerProyects .cuadrado:hover .box1 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  -webkit-transform: translate(0px, -80px);
+          transform: translate(0px, -80px);
+}
+
+.headerProyects .cuadrado:hover div:hover {
+  -webkit-filter: brightness(110%) saturate(150%);
+          filter: brightness(110%) saturate(150%);
+}
 /*# sourceMappingURL=style.css.map */

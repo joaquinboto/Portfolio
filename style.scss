@@ -457,7 +457,97 @@ footer {
 
 
 
+/////////////////////////*PROYECTO*///////////////////// 
 
+.headerProyects {
+    background-image: url(/img/Fondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 1100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    .cuadrado {
+        width: auto;
+        height: 550px;
+        position: relative;
+    
+        .box1 {
+            position: absolute;
+            width: 701px;
+            height: 428px;
+            left: 37px;
+            top: 110px;
+            background: url(/img/online-document-animate.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+            background-color: $fondo-transparente;
+            border-radius: 8px;
+        }
+    
+        .box2 {
+            position: absolute;
+            width: 399px;
+            height: 274px;
+            left: 225px;
+            top: 250px;
+            background: url(/img/Blog.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+            background-color: $fondo-transparente;
+            border-radius: 8px;
+        }
+        
+        .box3{
+            position: absolute;
+            width: 412px;
+            height: 274px;
+            left: 375px;
+            top: 280px;
+            background: url(/img/working-from-anywhere-animate.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+            background-color: $fondo-transparente;
+            border-radius: 8px;
+        }
+    
+    }
+
+    .cuadrado>* {
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+    }
+
+    .cuadrado>div {
+        transform: rotateY(-20deg) rotateX(20deg);
+        cursor: pointer;
+    }
+
+    .cuadrado:hover>div {
+        transform: rotateY(0deg) rotateX(0deg);
+        filter: saturate(20%)
+        
+    }
+
+    .cuadrado:hover .box2 {
+        transition-delay: 0.1s;
+        transform: translate(-260px, 30px);
+    }
+
+    .cuadrado:hover .box1 {
+        transition-delay: 0.1s ;
+        transform: translate(0px, -80px);
+    }
+
+    .cuadrado:hover div:hover {
+        filter: brightness(110%) saturate(150%);
+    }
+
+
+}
 
 
 
