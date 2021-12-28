@@ -13,15 +13,23 @@
 #menu {
 
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+    background-image: url(/img/Posiblefondo.png);
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    .nav-link{
+        color: black;
+    }
 
     @media (min-width: $lg) {
         background-color: #151515;
 
 
         .nav-link {
-            @include crearBordes;
+            
             padding: 5px 18px;
+            color: black;
         }
     }
 
@@ -44,7 +52,8 @@
 
 
 .headerHome {
-    background-image: url(./img/Fondo.svg);
+    background-image: url(./img/Posiblefondo.png);
+    background-attachment: fixed;
     width: auto;
     height: 100vh;
     max-height: auto;
@@ -67,7 +76,7 @@
         justify-content: center;
         height: 600px;
         align-items: center;
-        color: white;
+        color: black;
         grid-column-start: contenido1;
         grid-column-end: contenido1;
         }
@@ -130,6 +139,7 @@
             background-image: url(./img/slide33.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            border-radius: 15px;
             position: relative;
             
             
@@ -142,6 +152,7 @@
                 background-size: contain;
                 background-attachment: fixed;
                 background-repeat: no-repeat;
+                border-radius: 15px;
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -226,20 +237,24 @@
 }
 
 #section_ {
-    background-color: #f3f3f3;
-    border:groove 1px black;
+    background-image: url(/img/Posiblefondo.png);
+    background-position: center;
+    background-attachment: fixed;
+    
 }
 
 #intro {
-    background-image: url(./img/Fondo.svg);
+    background-image: url(./img/Posiblefondo.png);
+    background-attachment: fixed;
 }
 
 footer {
-    background-image: url(./img/Fondo.svg);
+    background-image: url(./img/Posiblefondo.png);
+    background-attachment: fixed;
     min-height: 100px;;
 
     p {
-        color:#f3f3f3;
+        color:black;
         text-align:center;
     }
 
@@ -252,12 +267,13 @@ footer {
 
 
 .contenedorContacto {
-    background-image: url(.img/Fondo.svg);
+    background-image: url(./img/Posiblefondo.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: auto;
     height: 100vh;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -350,7 +366,8 @@ footer {
 ///////////////////*SKILLS*///////////
 
 .headerSkills {
-    background-image: url(./img/Fondo.svg);
+    background-image: url(./img/Posiblefondo.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -408,14 +425,14 @@ footer {
     
             i{
                 font-size: 60px;
-                color: $color-nombre;
+                color: black;
                 padding-bottom: 20px;
             }
 
 
             h6 {
                 font-size: 14px;
-                color: wheat;
+                color: black;
             }
 
             h5 {
@@ -431,8 +448,8 @@ footer {
         .box:hover {
             transform: scale(1.1);
             transition: all 300ms ease;
-            box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
-            background-color: $color-nombre;
+            box-shadow: 0px 5px 50px rgb(255, 255, 255);
+            background-color: black;
             z-index: 1;
         }
 
@@ -460,7 +477,8 @@ footer {
 /////////////////////////*PROYECTO*///////////////////// 
 
 .headerProyects {
-    background-image: url(./img/Fondo.svg);
+    background-image: url(./img/Posiblefondo.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -498,7 +516,7 @@ footer {
 
 
         .ProyectsH1 {
-            color: white;
+            color: black;
             width: 70%;
             font-size: 45px;
             padding: 30px;
@@ -532,7 +550,7 @@ footer {
             background: url(./img/online-document-animate.svg);
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 5px 35px rgb(0, 0, 0 , 0.5);
             background-color: $fondo-transparente;
             border-radius: 8px;
             }
@@ -543,10 +561,10 @@ footer {
             height: 274px;
             left: 225px;
             top: 250px;
-            background: url(./img/Collab-bro.svg);
+            background: url(./img/Blog.svg);
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 5px 35px rgb(0, 0, 0 , 0.5);
             background-color: $fondo-transparente;
             border-radius: 8px;
             }
@@ -560,7 +578,7 @@ footer {
             background: url(./img/working-from-anywhere-animate.svg);
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 5px 35px rgb(0, 0, 0 , 0.5);
             background-color: $fondo-transparente;
             border-radius: 8px;
             }
@@ -595,6 +613,7 @@ footer {
 
     .dvProyectsAnimacion:hover div:hover {
         filter: brightness(120%) saturate(130%);
+        
         }
 
 }
@@ -614,7 +633,8 @@ footer {
     grid-template-rows: 1fr 1fr;
     width: 100%;
     height: 100vh;
-    background: url(./img/Fondo.svg);
+    background: url(./img/Posiblefondo.png);
+    background-attachment: fixed;
 
 
     @media (max-width: $sm) {

@@ -6,7 +6,13 @@
 
 #menu {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+  background-image: url(/img/Posiblefondo.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#menu .nav-link {
+  color: black;
 }
 
 @media (min-width: 992px) {
@@ -14,11 +20,8 @@
     background-color: #151515;
   }
   #menu .nav-link {
-    border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 0px 0px 5px white;
-            box-shadow: 0px 0px 5px white;
     padding: 5px 18px;
+    color: black;
   }
 }
 
@@ -32,7 +35,8 @@
 }
 
 .headerHome {
-  background-image: url(./img/Fondo.svg);
+  background-image: url(./img/Posiblefondo.png);
+  background-attachment: fixed;
   width: auto;
   height: 100vh;
   max-height: auto;
@@ -66,7 +70,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: black;
   -ms-grid-column: contenido1;
       grid-column-start: contenido1;
   grid-column-end: contenido1;
@@ -146,6 +150,7 @@
   background-image: url(./img/slide33.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 15px;
   position: relative;
 }
 
@@ -159,6 +164,7 @@
   background-size: contain;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  border-radius: 15px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -235,16 +241,19 @@
 }
 
 #section_ {
-  background-color: #f3f3f3;
-  border: groove 1px black;
+  background-image: url(/img/Posiblefondo.png);
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #intro {
-  background-image: url(./img/Fondo.svg);
+  background-image: url(./img/Posiblefondo.png);
+  background-attachment: fixed;
 }
 
 footer {
-  background-image: url(./img/Fondo.svg);
+  background-image: url(./img/Posiblefondo.png);
+  background-attachment: fixed;
   min-height: 100px;
 }
 
@@ -258,12 +267,13 @@ footer .iconos, footer img {
 }
 
 .contenedorContacto {
-  background-image: url(.img/Fondo.svg);
+  background-image: url(./img/Posiblefondo.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: auto;
   height: 100vh;
-  color: white;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,7 +367,8 @@ footer .iconos, footer img {
 }
 
 .headerSkills {
-  background-image: url(./img/Fondo.svg);
+  background-image: url(./img/Posiblefondo.png);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -458,13 +469,13 @@ footer .iconos, footer img {
 
 .headerSkills .dvContenedorSkills .box i {
   font-size: 60px;
-  color: #5C62EC;
+  color: black;
   padding-bottom: 20px;
 }
 
 .headerSkills .dvContenedorSkills .box h6 {
   font-size: 14px;
-  color: wheat;
+  color: black;
 }
 
 .headerSkills .dvContenedorSkills .box h5 {
@@ -482,9 +493,9 @@ footer .iconos, footer img {
           transform: scale(1.1);
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
-  -webkit-box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 30px -15px rgba(0, 0, 0, 0.5);
-  background-color: #5C62EC;
+  -webkit-box-shadow: 0px 5px 50px white;
+          box-shadow: 0px 5px 50px white;
+  background-color: black;
   z-index: 1;
 }
 
@@ -508,7 +519,8 @@ footer .iconos, footer img {
 }
 
 .headerProyects {
-  background-image: url(./img/Fondo.svg);
+  background-image: url(./img/Posiblefondo.png);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -560,7 +572,7 @@ footer .iconos, footer img {
 }
 
 .headerProyects .dvProyectsH1 .ProyectsH1 {
-  color: white;
+  color: black;
   width: 70%;
   font-size: 45px;
   padding: 30px;
@@ -607,7 +619,7 @@ footer .iconos, footer img {
   height: 274px;
   left: 225px;
   top: 250px;
-  background: url(./img/Collab-bro.svg);
+  background: url(./img/Blog.svg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
@@ -625,8 +637,8 @@ footer .iconos, footer img {
   background: url(./img/working-from-anywhere-animate.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
-          box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 5px 35px black;
+          box-shadow: 0px 5px 35px black;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 8px;
 }
@@ -679,7 +691,8 @@ footer .iconos, footer img {
       grid-template-rows: 1fr 1fr;
   width: 100%;
   height: 100vh;
-  background: url(./img/Fondo.svg);
+  background: url(./img/Posiblefondo.png);
+  background-attachment: fixed;
 }
 
 @media (max-width: 576px) {
