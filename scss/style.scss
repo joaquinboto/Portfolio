@@ -13,7 +13,7 @@
 #menu {
 
     
-    background-image: url(./img/Posiblefondo.png);
+    background-image: url(../img/Posiblefondo.png);
     background-attachment: fixed;
     background-size: cover;
 
@@ -23,7 +23,7 @@
     }
 
     @media (min-width: $lg) {
-        background: url(./img/Posiblefondo.png);
+        background: url(../img/Posiblefondo.png);
 
 
         .nav-link {
@@ -52,7 +52,7 @@
 
 
 .headerHome {
-    background-image: url(./img/Posiblefondo.png);
+    background-image: url(../img/Posiblefondo.png);
     background-attachment: fixed;
     width: auto;
     height: 100vh;
@@ -140,7 +140,7 @@
 
         .dvImg {
             grid-column: (2/3);
-            background-image: url(./img/slide33.jpg);
+            background-image: url(../img/slide33.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             border-radius: 15px;
@@ -243,7 +243,7 @@
 }
 
 .section {
-    background-image: url(./img/Posiblefondo.png);
+    background-image: url(../img/Posiblefondo.png);
     background-position: center;
     background-attachment: fixed;
     width: 100%;
@@ -284,7 +284,7 @@
 }
 
 #intro {
-    background-image: url(./img/Posiblefondo.png);
+    background-image: url(../img/Posiblefondo.png);
     background-attachment: fixed;
 }
 
@@ -293,7 +293,7 @@
 
 
 footer {
-    background-image: url(./img/Posiblefondo.png);
+    background-image: url(../img/Posiblefondo.png);
     background-attachment: fixed;
     min-height: 100px;;
 
@@ -318,7 +318,7 @@ footer {
 
 
 .contenedorContacto {
-    background-image: url(./img/Posiblefondo.png);
+    background-image: url(../img/Posiblefondo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -417,7 +417,7 @@ footer {
 ///////////////////*SKILLS*///////////
 
 .headerSkills {
-    background-image: url(./img/Posiblefondo.png);
+    background-image: url(../img/Posiblefondo.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -528,7 +528,7 @@ footer {
 /////////////////////////*PROYECTO*///////////////////// 
 
 .headerProyects {
-    background-image: url(./img/Posiblefondo.png);
+    background-image: url(../img/Posiblefondo.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -598,7 +598,7 @@ footer {
             height: 428px;
             left: 37px;
             top: 110px;
-            background: url(./img/online-document-animate.svg);
+            background: url(../img/online-document-animate.svg);
             background-repeat: no-repeat;
             background-size: cover;
             box-shadow: 0px 5px 35px rgb(0, 0, 0);
@@ -612,7 +612,7 @@ footer {
             height: 274px;
             left: 225px;
             top: 250px;
-            background: url(./img/Blog.svg);
+            background: url(../img/Blog.svg);
             background-repeat: no-repeat;
             background-size: cover;
             box-shadow: 0px 5px 35px rgb(0, 0, 0);
@@ -626,7 +626,7 @@ footer {
             height: 274px;
             left: 375px;
             top: 280px;
-            background: url(./img/working-from-anywhere-animate.svg);
+            background: url(../img/working-from-anywhere-animate.svg);
             background-repeat: no-repeat;
             background-size: cover;
             box-shadow: 0px 5px 35px rgb(0, 0, 0);
@@ -684,7 +684,7 @@ footer {
     grid-template-rows: 1fr 1fr;
     width: 100%;
     height: 100vh;
-    background: url(./img/Posiblefondo.png);
+    background: url(../img/Posiblefondo.png);
     background-attachment: fixed;
 
 
@@ -713,14 +713,14 @@ footer {
         .card1 {
             width: 300px;
             height: 400px;
-            background-image: url(./img/pixlr-bg-healer.png);
+            background-image: url(../img/pixlr-bg-healer.png);
             background-size: cover;
             background-repeat: no-repeat;
             transition: all 300ms ease-in-out;
         }
 
         .card1:hover {
-            background-image: url(./img/pixlr-bg-healer2.png);
+            background-image: url(../img/pixlr-bg-healer2.png);
             transform: rotateY(360deg);
         }
 
@@ -742,14 +742,14 @@ footer {
         .card2 {
             width: 300px;
             height: 400px;
-            background-image: url(./img/pixlr-bg-knight.png);
+            background-image: url(../img/pixlr-bg-knight.png);
             background-size: cover;
             background-repeat: no-repeat;
             transition: all 300ms ease-in-out;
         }
 
         .card2:hover {
-            background-image: url(./img/knight2.png);
+            background-image: url(../img/knight2.png);
             transform: rotateY(360deg);
         }
     }
@@ -769,14 +769,14 @@ footer {
         .card3{
             width: 300px;
             height: 400px;
-            background-image: url(./img/pixlr-bg-mage.png);
+            background-image: url(../img/pixlr-bg-mage.png);
             background-size: cover;
             background-repeat: no-repeat;
             transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
         }
 
         .card3:hover {
-            background-image: url(./img/pixlr-bg-mage2.png);
+            background-image: url(../img/pixlr-bg-mage2.png);
             transform: rotateY(360deg);
         }
 
