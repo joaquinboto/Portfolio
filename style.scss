@@ -134,6 +134,7 @@
             
             .redes:hover {
                 transform: map-get($map: $caja1, $key: transform );
+                filter: hue-rotate(360deg) drop-shadow(6px 2px 2px black);
             }
         }
 
@@ -241,17 +242,55 @@
     max-height:40rem ;
 }
 
-#section_ {
-    background-image: url(/img/Posiblefondo.png);
+.section {
+    background-image: url(./img/Posiblefondo.png);
     background-position: center;
     background-attachment: fixed;
-    
+    width: 100%;
+    height: 550px;
+    display: grid;
+    grid-template-areas: "desarrollo diseño" 
+                        "comunicacion comunicacion";
+
+
+    @media (max-width: $md) {
+        grid-template-areas: "desarrollo" 
+                            "diseño"
+                            "comunicacion";
+    }
+                        
+    .dvDesarrollo {
+        grid-area: desarrollo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dvDiseño {
+        grid-area: diseño;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dvComunicaciones {
+        grid-area: comunicacion;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
 
 #intro {
     background-image: url(./img/Posiblefondo.png);
     background-attachment: fixed;
 }
+
+
+///////////////////////////*FOOTER*///////////////////////////
+
 
 footer {
     background-image: url(./img/Posiblefondo.png);
@@ -263,9 +302,16 @@ footer {
         text-align:center;
     }
 
-    .iconos , img {
+    .iconos {
+        transition: all 300ms ease-in-out;
         padding: 0 10px;
     }
+
+    .iconos:hover{
+        transform: map-get($map: $caja1, $key: transform );
+        filter: hue-rotate(360deg) drop-shadow(6px 2px 2px black);
+    }
+        
 }
 
 ///////////////////////*CONTACTO*//////////////////////
