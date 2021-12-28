@@ -12,8 +12,8 @@
 
 #menu {
 
-    --bs-bg-opacity: 1;
-    background-image: url(/img/Posiblefondo.png);
+    
+    background-image: url(./img/Posiblefondo.png);
     background-attachment: fixed;
     background-size: cover;
 
@@ -23,7 +23,7 @@
     }
 
     @media (min-width: $lg) {
-        background-color: #151515;
+        background: url(./img/Posiblefondo.png);
 
 
         .nav-link {
@@ -60,13 +60,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-areas: "contenido1 contenido2";
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
 
     @media (max-width: $md) {
         grid-template-columns: auto;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "contenido1";
+        grid-template-rows: 1fr 500px;
         
     }
     
@@ -74,11 +73,15 @@
     .dvHeader{
         display: flex;
         justify-content: center;
-        height: 600px;
+        height: 100vh;
         align-items: center;
         color: black;
-        grid-column-start: contenido1;
-        grid-column-end: contenido1;
+        grid-column: 1/2;
+        }
+
+        @media (max-width: $md) {
+            grid-column: 1/2;
+            grid-row: 2/3;
         }
 
         .dvFlex {
@@ -135,7 +138,7 @@
         }
 
         .dvImg {
-            grid-area: (2/3);
+            grid-column: (2/3);
             background-image: url(./img/slide33.jpg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -145,6 +148,8 @@
             
             @media (max-width: $md) {
                 background-size: cover;
+                grid-column: 1/2;
+                grid-row: 2/3;
             }
 
 
@@ -550,7 +555,7 @@ footer {
             background: url(./img/online-document-animate.svg);
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: 0px 5px 35px rgb(0, 0, 0 , 0.5);
+            box-shadow: 0px 5px 35px rgb(0, 0, 0);
             background-color: $fondo-transparente;
             border-radius: 8px;
             }
@@ -564,7 +569,7 @@ footer {
             background: url(./img/Blog.svg);
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: 0px 5px 35px rgb(0, 0, 0 , 0.5);
+            box-shadow: 0px 5px 35px rgb(0, 0, 0);
             background-color: $fondo-transparente;
             border-radius: 8px;
             }
@@ -578,7 +583,7 @@ footer {
             background: url(./img/working-from-anywhere-animate.svg);
             background-repeat: no-repeat;
             background-size: cover;
-            box-shadow: 0px 5px 35px rgb(0, 0, 0 , 0.5);
+            box-shadow: 0px 5px 35px rgb(0, 0, 0);
             background-color: $fondo-transparente;
             border-radius: 8px;
             }
