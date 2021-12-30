@@ -1,8 +1,10 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 #menu {
@@ -12,6 +14,7 @@
 }
 #menu .nav-link {
   color: black;
+  font-family: "Rubik", sans-serif;
 }
 @media (min-width: 992px) {
   #menu {
@@ -23,7 +26,8 @@
   }
 }
 #menu #logo {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
   border-bottom: 1px white solid;
 }
 
@@ -73,12 +77,16 @@
 @media (min-width: 768px) {
   .headerHome .dvFlex {
     font-size: 18px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Rubik", sans-serif;
   }
 }
 .headerHome .dvFlex .titulo {
   font-size: 25px;
   text-align: center;
+}
+.headerHome .dvFlex .titulo .parrafoTitulo {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .headerHome .dvFlex .titulo {
@@ -163,6 +171,19 @@
 }
 .headerHome .dvImg .opacidad:hover button:hover {
   background-color: #5C62EC;
+}
+
+.parrafoAboutme {
+  font-weight: bold;
+  font-size: 30px;
+  width: 50%;
+}
+@media (max-width: 576px) {
+  .parrafoAboutme {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 30px;
+  }
 }
 
 .carousel-inner {
@@ -328,6 +349,9 @@ footer .iconos:hover {
   grid-row: 1/2;
   grid-column: 2/3;
 }
+.headerSkills .dvContenedorSkills .contenedorH1 h1 {
+  font-weight: bold;
+}
 .headerSkills .dvContenedorSkills .contenedorBox {
   grid-row: 3/4;
   grid-column: 2/3;
@@ -433,6 +457,7 @@ footer .iconos:hover {
   font-size: 45px;
   padding: 30px;
   text-align: center;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .headerProyects .dvProyectsH1 .ProyectsH1 {
@@ -525,8 +550,8 @@ footer .iconos:hover {
 @media (max-width: 576px) {
   .mainFlex {
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 1500px;
+    grid-template-rows: 400px 400px 400px;
+    height: 1200px;
   }
 }
 @media (min-width: 768px) {
@@ -544,16 +569,25 @@ footer .iconos:hover {
   margin-bottom: 20px;
 }
 .mainFlex .dvCard1 .card1 {
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 300px;
   background-image: url(../img/pixlr-bg-healer.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  transition: all 300ms ease-in-out;
 }
-.mainFlex .dvCard1 .card1:hover {
-  background-image: url(../img/pixlr-bg-healer2.png);
-  transform: rotateY(360deg);
+@media (min-width: 768px) {
+  .mainFlex .dvCard1 .card1 {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/pixlr-bg-healer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 300ms ease-in-out;
+  }
+  .mainFlex .dvCard1 .card1:hover {
+    background-image: url(../img/pixlr-bg-healer2.png);
+    transform: rotateY(360deg);
+  }
 }
 .mainFlex .dvCard2 {
   grid-column: 2/3;
@@ -569,16 +603,25 @@ footer .iconos:hover {
   }
 }
 .mainFlex .dvCard2 .card2 {
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 300px;
   background-image: url(../img/pixlr-bg-knight.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  transition: all 300ms ease-in-out;
 }
-.mainFlex .dvCard2 .card2:hover {
-  background-image: url(../img/knight2.png);
-  transform: rotateY(360deg);
+@media (min-width: 768px) {
+  .mainFlex .dvCard2 .card2 {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/pixlr-bg-knight.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 300ms ease-in-out;
+  }
+  .mainFlex .dvCard2 .card2:hover {
+    background-image: url(../img/knight2.png);
+    transform: rotateY(360deg);
+  }
 }
 .mainFlex .dvCard3 {
   grid-column: 1/3;
@@ -593,16 +636,25 @@ footer .iconos:hover {
   }
 }
 .mainFlex .dvCard3 .card3 {
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 300px;
   background-image: url(../img/pixlr-bg-mage.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 }
-.mainFlex .dvCard3 .card3:hover {
-  background-image: url(../img/pixlr-bg-mage2.png);
-  transform: rotateY(360deg);
+@media (min-width: 768px) {
+  .mainFlex .dvCard3 .card3 {
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/pixlr-bg-mage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  }
+  .mainFlex .dvCard3 .card3:hover {
+    background-image: url(../img/pixlr-bg-mage2.png);
+    transform: rotateY(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

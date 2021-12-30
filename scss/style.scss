@@ -3,6 +3,10 @@
 @import "_mediaquery";
 @import "_mixin";
 @import "_mapas";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +24,7 @@
 
     .nav-link{
         color: black;
+        font-family: $estilo-fuente
     }
 
     @media (min-width: $lg) {
@@ -27,14 +32,14 @@
 
 
         .nav-link {
-            
             padding: 5px 18px;
             color: black;
         }
     }
 
     #logo {
-        font-family:Arial, Helvetica, sans-serif;
+        font-family: 'Rubik', sans-serif;
+        font-weight: bold;
         border-bottom: 1px white solid;
         
     }
@@ -100,6 +105,12 @@
             .titulo {
                 font-size: 25px ;
                 text-align: center;
+                
+
+                .parrafoTitulo {
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: bold;
+                }
             }
 
             .titulo {
@@ -110,6 +121,7 @@
 
             span {
                 color: $color-nombre;
+                
             }
 
             .botonCv {
@@ -206,6 +218,18 @@
 
   ///////////*ABOUTME*///////////////
 
+  .parrafoAboutme {
+      font-weight: bold;
+      font-size: 30px;
+      width: 50%;
+
+
+      @media (max-width: $sm) {
+          font-size: 20px;
+          width: 100%;
+          padding: 0 30px;
+      }
+  }
 
   .carousel-inner {
     max-height:40rem ;
@@ -413,6 +437,10 @@ footer {
             justify-content: flex-end;
             grid-row: 1/2;
             grid-column: 2/3;
+            
+            h1 {
+                font-weight: bold;
+            }
         }
         
         .contenedorBox  {
@@ -540,6 +568,7 @@ footer {
             font-size: 45px;
             padding: 30px;
             text-align: center;
+            font-weight: bold;
 
             @media (max-width: $md) {
                 font-size: 30px;
@@ -658,8 +687,8 @@ footer {
 
     @media (max-width: $sm) {
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr;
-        height: 1500px;
+        grid-template-rows: 400px 400px 400px;
+        height: 1200px;
         
     }
 
@@ -679,18 +708,33 @@ footer {
 
 
         .card1 {
-            width: 300px;
-            height: 400px;
+            width: 250px;
+            height: 300px;
             background-image: url(../img/pixlr-bg-healer.png);
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
-            transition: all 300ms ease-in-out;
+
         }
 
-        .card1:hover {
-            background-image: url(../img/pixlr-bg-healer2.png);
-            transform: rotateY(360deg);
+        @media (min-width: $md) {
+
+
+            .card1 {
+                width: 300px;
+                height: 400px;
+                background-image: url(../img/pixlr-bg-healer.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: all 300ms ease-in-out;
+            }
+
+            .card1:hover {
+                background-image: url(../img/pixlr-bg-healer2.png);
+                transform: rotateY(360deg);
+            }
+
         }
+
 
 
     }
@@ -708,19 +752,32 @@ footer {
         }
 
         .card2 {
-            width: 300px;
-            height: 400px;
+            width: 250px;
+            height: 300px;
             background-image: url(../img/pixlr-bg-knight.png);
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
-            transition: all 300ms ease-in-out;
+
         }
 
-        .card2:hover {
-            background-image: url(../img/knight2.png);
-            transform: rotateY(360deg);
+        @media (min-width: $md) {
+
+            .card2 {
+                width: 300px;
+                height: 400px;
+                background-image: url(../img/pixlr-bg-knight.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: all 300ms ease-in-out;
+            }
+            
+            .card2:hover {
+                background-image: url(../img/knight2.png);
+                transform: rotateY(360deg);
+            }
         }
     }
+
 
     .dvCard3 {
         grid-column: 1/3;
@@ -735,18 +792,33 @@ footer {
         
 
         .card3{
-            width: 300px;
-            height: 400px;
+            width: 250px;
+            height: 300px;
             background-image: url(../img/pixlr-bg-mage.png);
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
-            transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
         }
 
-        .card3:hover {
-            background-image: url(../img/pixlr-bg-mage2.png);
-            transform: rotateY(360deg);
+        @media (min-width: $md) {
+
+            .card3 {
+                width: 300px;
+                height: 400px;
+                background-image: url(../img/pixlr-bg-mage.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+            }
+
+
+            .card3:hover {
+                background-image: url(../img/pixlr-bg-mage2.png);
+                transform: rotateY(360deg);
+            }
+            
         }
+
+
 
     }
 }
