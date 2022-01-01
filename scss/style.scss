@@ -466,6 +466,7 @@ footer {
             display: flex;
             justify-content: center;
             
+            
             @media (max-width: $md) {
                 flex-wrap: wrap;
                 grid-row: 2/4;
@@ -485,6 +486,7 @@ footer {
             cursor: pointer;
             border-radius: 8px;
             position: relative;
+
     
             i{
                 font-size: 60px;
@@ -506,6 +508,8 @@ footer {
                 filter: blur(5px);
                 opacity: 0;
             }
+
+            
         }
 
         .box:hover {
