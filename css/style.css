@@ -8,9 +8,9 @@
 }
 
 #menu {
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
 }
 #menu .nav-link {
@@ -19,9 +19,9 @@
 }
 @media (min-width: 992px) {
   #menu {
-    background: #5433FF;
-    background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-    background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+    background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+    background-size: 400% 400%;
+    animation: degrade 10s ease-in-out infinite;
     background-attachment: fixed;
   }
   #menu .nav-link {
@@ -40,15 +40,13 @@
 }
 
 .headerHome {
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
   width: auto;
   height: 100vh;
   max-height: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -179,6 +177,17 @@
   background-color: #5C62EC;
 }
 
+@keyframes degrade {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .parrafoAboutme {
   font-weight: bold;
   font-size: 30px;
@@ -197,9 +206,9 @@
 }
 
 .section {
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
   width: 100%;
   height: 550px;
@@ -231,16 +240,16 @@
 }
 
 #intro {
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
 }
 
 footer {
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
   min-height: 100px;
 }
@@ -258,9 +267,9 @@ footer .iconos:hover {
 }
 
 .contenedorContacto {
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
   width: auto;
   height: 100vh;
@@ -331,9 +340,9 @@ footer .iconos:hover {
 }
 
 .headerSkills {
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
   position: relative;
   height: 100vh;
@@ -430,9 +439,9 @@ footer .iconos:hover {
 }
 
 .headerProyects {
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
   height: 100vh;
   max-height: 1100px;
@@ -556,9 +565,9 @@ footer .iconos:hover {
   grid-template-rows: 150px 500px;
   width: 100%;
   height: 100vh;
-  background: #5433FF;
-  background: -webkit-linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
-  background: linear-gradient(to bottom, #A5FECB, #20BDFF, #1F1F47);
+  background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
+  background-size: 400% 400%;
+  animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
 }
 @media (max-width: 576px) {
