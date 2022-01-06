@@ -218,6 +218,7 @@
 @media (max-width: 768px) {
   .section {
     grid-template-areas: "desarrollo" "diseño" "comunicacion";
+    height: 850px;
   }
 }
 .section .dvDesarrollo {
@@ -225,18 +226,83 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s ease-in-out;
+  width: 70%;
+  justify-self: center;
+  border-radius: 20px;
+}
+.section .dvDesarrollo i {
+  font-size: 100px;
+  padding: 15px;
+}
+@media (max-width: 576px) {
+  .section .dvDesarrollo {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.section .dvDesarrollo:hover {
+  color: white;
+  background-color: black;
+  transform: rotateX(360deg);
 }
 .section .dvDiseño {
   grid-area: diseño;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s ease-in-out;
+  width: 70%;
+  justify-self: center;
+  border-radius: 20px;
+}
+.section .dvDiseño i {
+  font-size: 100px;
+  padding: 15px;
+}
+@media (max-width: 576px) {
+  .section .dvDiseño {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.section .dvDiseño:hover {
+  color: white;
+  background-color: black;
+  transform: rotateX(360deg);
 }
 .section .dvComunicaciones {
   grid-area: comunicacion;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 1s ease-in-out;
+  width: 35%;
+  justify-self: center;
+  border-radius: 20px;
+}
+.section .dvComunicaciones i {
+  font-size: 100px;
+  padding: 15px;
+}
+@media (max-width: 768px) {
+  .section .dvComunicaciones {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .section .dvComunicaciones {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.section .dvComunicaciones:hover {
+  color: white;
+  background-color: black;
+  transform: rotateX(360deg);
 }
 
 #intro {

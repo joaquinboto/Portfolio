@@ -264,20 +264,44 @@
     height: 550px;
     display: grid;
     grid-template-areas: "desarrollo diseño" 
-                        "comunicacion comunicacion";
-
-
+    "comunicacion comunicacion";
+    
+    
     @media (max-width: $md) {
         grid-template-areas: "desarrollo" 
-                            "diseño"
-                            "comunicacion";
+        "diseño"
+        "comunicacion";
+        height: 850px;
     }
-                        
+    
     .dvDesarrollo {
         grid-area: desarrollo;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 1s ease-in-out;
+        width: 70%;
+        justify-self: center;
+        border-radius: 20px;
+        
+        
+        i {
+            font-size: 100px;
+            padding: 15px;
+        }
+        
+        @media (max-width: $sm) {
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+    }
+
+    .dvDesarrollo:hover {
+        color: white;
+        background-color: black;
+        transform: rotateX(360deg);
     }
 
     .dvDiseño {
@@ -285,6 +309,29 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 1s ease-in-out;
+        width: 70%;
+        justify-self: center;
+        border-radius: 20px;
+
+        i {
+            font-size: 100px;
+            padding: 15px;
+        }
+
+
+        @media (max-width: $sm) {
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .dvDiseño:hover {
+        color: white;
+        background-color: black;
+        transform: rotateX(360deg);
+
     }
 
     .dvComunicaciones {
@@ -292,8 +339,32 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 1s ease-in-out;
+        width: 35%;
+        justify-self: center;
+        border-radius: 20px;
+
+        i {
+            font-size: 100px;
+            padding: 15px;
+        }
+
+        @media (max-width: $md) {
+            width: 70%;
+        }
+
+        @media (max-width: $sm) {
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
+    .dvComunicaciones:hover {
+        color: white;
+        background-color: black;
+        transform: rotateX(360deg);
+    }
 
 }
 
