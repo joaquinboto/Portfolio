@@ -17,6 +17,9 @@
   color: black;
   font-family: "Rubik", sans-serif;
 }
+#menu .nav-link:hover {
+  opacity: 0.5;
+}
 @media (min-width: 992px) {
   #menu {
     background: linear-gradient(-45deg, #EE7752, #E73c7e, #23A6D5, #23D5AB, #DE9C21);
@@ -317,7 +320,7 @@
   animation: degrade 10s ease-in-out infinite;
   background-attachment: fixed;
   width: 100%;
-  height: 100px;
+  height: 150px;
   position: relative;
 }
 
@@ -332,34 +335,49 @@ footer {
   flex-direction: column;
   position: relative;
 }
-footer .redes {
-  list-style: none;
+footer .redesFooter {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-left: 0px;
 }
-footer .redes a {
+footer .redesFooter li {
+  list-style: none;
+}
+footer .redesFooter a {
   display: inline-block;
 }
-footer .menu {
+footer .menuFooter {
   list-style: none;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   text-decoration: none;
   margin: 3px 0;
+  padding-left: 0px;
+}
+@media (max-width: 576px) {
+  footer .menuFooter {
+    height: 150px;
+  }
 }
 @media (min-width: 768px) {
-  footer .menu {
+  footer .menuFooter {
     flex-direction: row;
     justify-content: space-around;
     width: 400px;
   }
 }
-footer .menu a {
+footer .menuFooter a {
   display: inline-block;
   text-decoration: none;
-  padding: 5px;
   color: white;
+  margin-bottom: 5px;
+  border-bottom: 1px solid white;
+  height: 20px;
+}
+footer .menuFooter a:hover {
+  opacity: 0.5;
 }
 footer .lni {
   font-size: 35px;
@@ -735,7 +753,7 @@ footer p {
   .mainFlex {
     grid-template-columns: 100%;
     grid-template-rows: 150px 400px 400px;
-    height: 1200px;
+    height: 1400px;
   }
 }
 @media (min-width: 768px) {
