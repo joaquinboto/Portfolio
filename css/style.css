@@ -435,7 +435,7 @@ footer #ola4 {
   z-index: 999;
   opacity: 0.7;
   bottom: 10px;
-  animation: ola2 6s linear infinite;
+  animation: ola1 6s linear infinite;
 }
 footer p {
   font-size: 10px;
